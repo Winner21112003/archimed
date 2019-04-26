@@ -1,0 +1,347 @@
+var
+a:array[1..7,1..1800] of char;
+s:string;
+x,i,j:longint;
+begin
+readln(s);
+j:=1;
+x:=1;
+i:=1;
+
+while (j<=length(S)) and (x<=7) do
+begin
+
+if s[j]='1' then
+begin
+a[x,i]:='.';
+a[x,i+1]:='.';
+a[x,i+2]:='.';
+a[x,i+3]:='.';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+
+
+
+if s[j]='2' then
+begin
+if (x=1) or (x=4) or (x=7) then
+begin
+a[x,i]:='X';
+a[x,i+1]:='X';
+a[x,i+2]:='X';
+a[x,i+3]:='X';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+if (x=2) or (x=3) then
+begin
+a[x,i]:='.';
+a[x,i+1]:='.';
+a[x,i+2]:='.';
+a[x,i+3]:='.';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+
+if (x=5) or (x=6) then
+begin
+a[x,i]:='X';
+a[x,i+1]:='.';
+a[x,i+2]:='.';
+a[x,i+3]:='.';
+a[x,i+4]:='.';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+
+end;
+
+
+if s[j]='3' then
+begin
+if (x=1) or (x=4) or (x=7) then
+begin
+a[x,i]:='X';
+a[x,i+1]:='X';
+a[x,i+2]:='X';
+a[x,i+3]:='X';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+if (x=2) or (x=3) or (x=5) or (x=6)  then
+begin
+a[x,i]:='.';
+a[x,i+1]:='.';
+a[x,i+2]:='.';
+a[x,i+3]:='.';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+
+end;
+
+
+
+if s[j]='4' then
+begin
+if (x=1) or (x=2) or (x=3) then
+begin
+a[x,i]:='X';
+a[x,i+1]:='.';
+a[x,i+2]:='.';
+a[x,i+3]:='.';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+if (x=5) or (x=6) or (x=7) then
+begin
+a[x,i]:='.';
+a[x,i+1]:='.';
+a[x,i+2]:='.';
+a[x,i+3]:='.';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+
+if (x=4) then
+begin
+a[x,i]:='X';
+a[x,i+1]:='X';
+a[x,i+2]:='X';
+a[x,i+3]:='X';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+
+end;
+
+if s[j]='5' then
+begin
+if (x=1) or (x=4) or (x=7) then
+begin
+a[x,i]:='X';
+a[x,i+1]:='X';
+a[x,i+2]:='X';
+a[x,i+3]:='X';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+if (x=5) or (x=6)  then
+begin
+a[x,i]:='.';
+a[x,i+1]:='.';
+a[x,i+2]:='.';
+a[x,i+3]:='.';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+
+if (x=2) or (x=3) then
+begin
+a[x,i]:='X';
+a[x,i+1]:='.';
+a[x,i+2]:='.';
+a[x,i+3]:='.';
+a[x,i+4]:='.';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+
+end;
+
+if s[j]='6' then
+begin
+if (x=1) or (x=4) or (x=7) then
+begin
+a[x,i]:='X';
+a[x,i+1]:='X';
+a[x,i+2]:='X';
+a[x,i+3]:='X';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+if (x=5) or (x=6)  then
+begin
+a[x,i]:='X';
+a[x,i+1]:='.';
+a[x,i+2]:='.';
+a[x,i+3]:='.';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+
+if (x=2) or (x=3) then
+begin
+a[x,i]:='X';
+a[x,i+1]:='.';
+a[x,i+2]:='.';
+a[x,i+3]:='.';
+a[x,i+4]:='.';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+
+
+
+end;
+
+
+if s[j]='7' then
+begin
+if (x=1) then
+begin
+a[x,i]:='X';
+a[x,i+1]:='X';
+a[x,i+2]:='X';
+a[x,i+3]:='X';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end else
+begin
+a[x,i]:='.';
+a[x,i+1]:='.';
+a[x,i+2]:='.';
+a[x,i+3]:='.';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+
+
+
+
+
+end;
+
+
+if s[j]='8' then
+begin
+if (x=1) or (x=4) or (x=7) then
+begin
+a[x,i]:='X';
+a[x,i+1]:='X';
+a[x,i+2]:='X';
+a[x,i+3]:='X';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+if (x=5) or (x=6) or (x=2) or (x=3)  then
+begin
+a[x,i]:='X';
+a[x,i+1]:='.';
+a[x,i+2]:='.';
+a[x,i+3]:='.';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+
+
+
+
+end;
+
+
+
+
+if s[j]='9' then
+begin
+if (x=1) or (x=4) or (x=7) then
+begin
+a[x,i]:='X';
+a[x,i+1]:='X';
+a[x,i+2]:='X';
+a[x,i+3]:='X';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+if (x=2) or (x=3)  then
+begin
+a[x,i]:='X';
+a[x,i+1]:='.';
+a[x,i+2]:='.';
+a[x,i+3]:='.';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+if (x=5) or (x=6) then
+begin
+a[x,i]:='.';
+a[x,i+1]:='.';
+a[x,i+2]:='.';
+a[x,i+3]:='.';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+
+
+
+end;
+
+if s[j]='0' then
+begin
+if (x=1) or (x=7) then
+begin
+a[x,i]:='X';
+a[x,i+1]:='X';
+a[x,i+2]:='X';
+a[x,i+3]:='X';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+if (x=2) or (x=3) or (x=5) or (x=6) or (x=4)  then
+begin
+a[x,i]:='X';
+a[x,i+1]:='.';
+a[x,i+2]:='.';
+a[x,i+3]:='.';
+a[x,i+4]:='X';
+a[x,i+5]:='.';
+i:=i+6;
+end;
+
+end;
+
+inc(j);
+
+if (j>length(s)) and (x=7) then
+break;
+
+if (j>length(s)) then
+begin
+j:=1;
+i:=1;
+inc(x);
+end
+
+
+
+end;
+
+for x:=1 to 7  do
+begin
+for i:=1 to length(s)*6-1 do
+write(a[x,i]);
+writeln;
+end;
+
+end.
