@@ -1,6 +1,6 @@
 var
 a:array[1..7,1..1800] of char;
-s:string;
+s:ansistring;
 x,i,j:longint;
 begin
 readln(s);
