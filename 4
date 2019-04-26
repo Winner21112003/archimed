@@ -1,0 +1,31 @@
+var
+  a: array [1..35] of integer;
+  res: array [1..35] of integer;
+  i,m,n:integer;
+begin
+  read(n);
+  for i:=1 to n do
+    read(a[i]);
+  readln(m);
+  i := n;
+  while m>0 do
+  begin
+    if m < a[i] then
+    begin
+      writeln ('Impossible');
+      exit;
+    end
+    else
+    begin
+      res[i] := m div a[i];
+      m := m mod a[i];
+    end;
+    dec(i)
+  end;
+  i := 1;
+  while a[i]<>0 do
+  begin
+       write (res[i], ' ');
+       inc(i);
+  end;
+end.
