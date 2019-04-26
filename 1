@@ -1,1 +1,18 @@
-1
+var
+a,b,k,c,d:real;
+begin
+read(a,b,k);
+if A<B then
+begin
+c:=a;
+a:=b;
+b:=c;
+end;
+c:=a*a;
+c:=c/k;
+c:=sqrt(c);
+if c-int(c)>0 then
+write(int(c)+1)
+else
+writeln(int(c));
+end.
