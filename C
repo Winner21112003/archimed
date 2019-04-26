@@ -1,0 +1,31 @@
+var
+h:array [1..10000] of longint;
+max,a,b,c,g,n,d,k,l,m:longint;
+begin
+read(n);
+for g:=1 to n do
+begin
+read(a,b,c);
+if a>b then max:=a else max:=b;
+if c>max then max:=c;
+d:=0;
+k:=0;
+while (a<>d and k) or (b<>d or k) do
+begin
+inc(d);
+k:=d+c;
+if k>max then break;
+end;
+if k>max then k:=-1;
+for l:=1+m to 1+m do
+if k<>-1 then begin h[l]:=k; h[l+1]:=d; end;
+inc(m,2);
+end;
+m:=0;
+for g:=1 to n do
+begin
+for l:=1+m to 1+m do
+if h[l]=0 then write(-1) else writeln(h[l],' ',h[l+1]);
+inc(m,2);
+end;
+end.
