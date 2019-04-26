@@ -1,0 +1,61 @@
+var
+h,m,q,t,code,a,b:longint;
+s:String;
+begin
+readln(s);
+val(copy(s,1,2),h,code);
+val(copy(s,4,2),m,code);
+
+t:=h*60+m;
+
+
+read(a,b);
+
+q:=t mod 60;
+
+if q<=a then
+begin
+if t div 60 <10 then
+writeln('0',t div 60,':','00')
+else
+writeln(t div 60,':','00');
+exit;
+end;
+
+
+
+if ((t div 60+1)*60-t<=b) and (t+b<1440) then
+begin
+if (t div 60+1)<10 then
+writeln('0',(t div 60+1),':','00')
+else
+writeln((t div 60+1),':','00');
+exit;
+end;
+
+if ((t+b)>=1440) and (q>a) then
+begin
+writeln('23:59');
+exit;
+end;
+
+
+if ((t+b)>=1440) and (q<=a) then
+begin
+writeln(t div 60,':','00');
+exit;
+end;
+
+
+
+if t div 60 <10 then
+
+writeln('0',t div 60,':',m+b)
+
+else
+
+writeln(t div 60,':',m+b);
+
+
+
+end.
